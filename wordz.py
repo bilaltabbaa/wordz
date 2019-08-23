@@ -1,9 +1,10 @@
 import time
 
 def passwd():
-    password = input("Password : ")
+    password = input("Press Enter : ")
 
     def wordz():
+        
         T = 0.6
 
         k = "_"
@@ -187,17 +188,11 @@ def passwd():
 
                 sure()
         sure()
-    if password == "wordz":
-        print("Correct Password!")
+    if password == "":
+        print("Hi!")
 
         print()
 
         wordz()
-    else:
-        print("Incorrect password!")
-
-        print()
-
-        passwd()
 
 passwd()

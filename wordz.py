@@ -1,7 +1,8 @@
 import time
 
 def passwd():
-    password = input("Press Enter : ")
+    
+    start = input("Press Enter : ")
 
     def wordz():
         
@@ -160,6 +161,7 @@ def passwd():
             conf = input("(Y/N) : ")
 
             if conf == "Y":
+
                 print("ok... good\n")
 
                 print("Please specify a NEW name for the wordlist\n")
@@ -177,6 +179,7 @@ def passwd():
                 out.close()
 
             elif conf == "N":
+
                 print("Restarting...\n")
 
                 time.sleep(2)
@@ -184,11 +187,14 @@ def passwd():
                 wordz()
 
             else:
+
                 print('Please Enter "Y" or "N"\n')
 
                 sure()
         sure()
-    if password == "":
+
+    if start == "":
+
         print("Hi!")
 
         print()

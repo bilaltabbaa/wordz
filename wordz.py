@@ -1,8 +1,8 @@
 import time
-
-def passwd():
+def app():
     
     start = input("Press Enter : ")
+    print()
 
     def wordz():
         
@@ -13,6 +13,8 @@ def passwd():
         i = "\n"
 
         a = "@"
+
+        d = "-"
 
         print("Welcome to...")
 
@@ -39,7 +41,11 @@ def passwd():
 
         print()
 
-        print("Good")
+        if name == "":
+            print("Please enter a name...")
+            time.sleep(2)
+            print()
+            wordz()
 
         print()
 
@@ -51,11 +57,15 @@ def passwd():
 
         print()
 
-        print("Nice")
+        if last == "":
+            print("Please enter a surname...")
+            print()
+            time.sleep(2)
+            wordz()
 
         print()
 
-        print("When was he/she born?")
+        print("Date of birth?")
 
         print()
 
@@ -65,7 +75,7 @@ def passwd():
 
         print()
 
-        print("And where?")
+        print("City of birth?")
 
         city = str(input(": "))
 
@@ -156,9 +166,35 @@ def passwd():
 
             line36 = city + a + birth + i
 
+            line37 = name + d + last + i
+
+            line38 = name + d + birth + i
+
+            line39 = name + d + city + i
+
+            line40 = last + d + name + i
+
+            line41 = last + d + birth + i
+
+            line42 = last + d + city + i
+
+            line43 = birth + d + name + i
+
+            line44 = birth + d + last + i 
+
+            line45 = birth + d + city + i
+
+            line46 = city + d + name + i
+
+            line47 = city + d + last + i
+
+            line48 = city + d + birth + i
+
             print("Correct?")
 
             conf = input("(Y/N) : ")
+
+            print()
 
             if conf == "Y":
 
@@ -168,13 +204,30 @@ def passwd():
 
                 newname = str(input(": "))
 
-                with open(newname + ".lst", "w") as out:
+                with open(newname + ".txt", "w") as out:
                     
-                    out.writelines([line1, line2, line3, line4, line5, line6, line7, line8, line9, line10, line11, line12, line13, line14, line15, line16, line17, line18, line19, line20, line21, line22, line23, line24, line25, line26, line27, line28, line29, line30, line31, line32, line33, line34, line35, line36])
+                    out.writelines([line1, line2, line3, line4, line5, line6, line7, line8,line9, line10,
+                     line11, line12, line13, line14, line15, line16, line17, line18,line19, line20, line21, line22, line23, line24,
+                     line25, line26, line27,line28, line29, line30, line31, line32, line33, line34,
+                      line35, line36, line37, line38, line39, line40, line41, line42, line43, line44, line45, line46, line47, line48])
 
                 print()
 
-                print("Done, you should now see a file called " '"'+ newname + '.lst"' + " I suggest you combine it with another wordlist for higher chances, happy hacking!")
+                print("[+] Generating file... ")
+
+                time.sleep(2)
+
+                print("[+] File saved as " + newname + ".txt")
+
+                time.sleep(1)
+
+                print("[+] Done!\n")
+
+                time.sleep(4)
+
+                print("you should now see a file called " '"'+ newname + '.txt"' + " I suggest you combine it with another wordlist for higher chances, happy hacking!")
+
+                print()
 
                 out.close()
 
@@ -201,4 +254,7 @@ def passwd():
 
         wordz()
 
-passwd()
+    else:
+        wordz()
+
+app()

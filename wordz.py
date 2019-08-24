@@ -190,6 +190,102 @@ def app():
 
             line48 = city + d + birth + i
 
+            line49 = name.title() + last + i
+
+            line50 = name.title() + birth + i
+
+            line51 = name.title() + city + i
+
+            line52 = last.title() + name + i
+
+            line53 = last.title() + birth + i
+
+            line54 = last.title() + city + i
+
+            line55 = birth.title() + name + i
+
+            line56 = birth.title() + last + i 
+
+            line57 = birth.title() + city + i
+
+            line58 = city.title() + name + i
+
+            line59 = city.title() + last + i
+
+            line60 = city.title() + birth + i
+
+            line61 = name.title() + k + last + i
+
+            line62 = name.title() + k + birth + i
+
+            line63 = name.title() + k + city + i
+
+            line64 = last.title() + k + name + i
+
+            line65 = last.title() + k + birth + i
+
+            line66 = last.title() + k + city + i
+
+            line67 = birth.title() + k + name + i
+
+            line68 = birth.title() + k + last + i 
+
+            line69 = birth.title() + k + city + i
+
+            line70 = city.title() + k + name + i
+
+            line71 = city.title() + k + last + i
+
+            line72 = city.title() + k + birth + i
+
+            line73 = name.title() + a + last + i
+
+            line74 = name.title() + a + birth + i
+
+            line74 = name.title() + a + city + i
+
+            line75 = last.title() + a + name + i
+
+            line76 = last.title() + a + birth + i
+
+            line77 = last.title() + a + city + i
+
+            line78 = birth.title() + a + name + i
+
+            line79 = birth.title() + a + last + i 
+
+            line80 = birth.title() + a + city + i
+
+            line81 = city.title() + a + name + i
+
+            line82 = city.title() + a + last + i
+
+            line83 = city.title() + a + birth + i
+
+            line84 = name.title() + d + last + i
+
+            line85 = name.title() + d + birth + i
+
+            line86 = name.title() + d + city + i
+
+            line87 = last.title() + d + name + i
+
+            line88 = last.title() + d + birth + i
+
+            line89 = last.title() + d + city + i
+
+            line90 = birth.title() + d + name + i
+
+            line91 = birth.title() + d + last + i 
+
+            line92 = birth.title() + d + city + i
+
+            line93 = city.title() + d + name + i
+
+            line94 = city.title() + d + last + i
+
+            line95 = city.title() + d + birth + i
+
             print("Correct?")
 
             conf = input("(Y/N) : ")
@@ -209,7 +305,11 @@ def app():
                     out.writelines([line1, line2, line3, line4, line5, line6, line7, line8,line9, line10,
                      line11, line12, line13, line14, line15, line16, line17, line18,line19, line20, line21, line22, line23, line24,
                      line25, line26, line27,line28, line29, line30, line31, line32, line33, line34,
-                      line35, line36, line37, line38, line39, line40, line41, line42, line43, line44, line45, line46, line47, line48])
+                      line35, line36, line37, line38, line39, line40, line41, line42, line43, line44, line45, line46, line47, line48,
+			            line49, line50, line51, line52, line53, line54, line55, line56, line57, line58, line59 , line60, line61, line62,
+			            line63, line64, line65, line66, line67, line68, line69, line70, line71, line72, line73, line74, line75, line76,
+			            line77, line78, line79, line80, line81, line82, line83, line84, line85, line86, line87, line88, line89, line90,
+                         line91, line92, line93, line94, line95])
 
                 print()
 
